@@ -5,6 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
+    <link rel="stylesheet" type="text/css" href="~/css/detailsstyle.css" />
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -39,6 +43,13 @@
                 <asp:Parameter Name="VehicleID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <br />
+        <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+        <br />
+        <br />
+
+        <span class="deletedCar"> <asp:Label ID="lbl_deletedcar" runat="server"></asp:Label></span>
+        <br />
         <br />
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_cardetails" Height="50px" Width="125px">
             <Fields>
