@@ -1,13 +1,20 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="cardetails.aspx.vb" Inherits="cardetails" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="xcardetails.aspx.vb" Inherits="cardetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> a title for car details
-</asp:Content>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="~/css/detailsstyle.css" />
 
 
-
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-    <asp:SqlDataSource ID="sql_cardetails" runat="server" ConnectionString="<%$ ConnectionStrings:TGLAVAN_HW7 %>" SelectCommand="SELECT * FROM [TGLAVAN_HW7] WHERE ([VehicleID] = @VehicleID)">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:SqlDataSource ID="sql_cardetails" runat="server" ConnectionString="<%$ ConnectionStrings:TGLAVAN_HW7 %>" SelectCommand="SELECT * FROM [TGLAVAN_HW7] WHERE ([VehicleID] = @VehicleID)">
            
             <SelectParameters>
                 <asp:QueryStringParameter Name="VehicleID" QueryStringField="VehicleID" Type="Int32" />
@@ -36,5 +43,7 @@
         </asp:DetailsView>
         <br />
     
-</asp:Content>
-
+    </div>
+    </form>
+</body>
+</html>
