@@ -37,7 +37,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+        <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/admin/Default.aspx">Home</asp:HyperLink>
         <br />
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_carsnew" DefaultMode="Insert" Height="50px" Width="125px">
             <Fields>

@@ -37,7 +37,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="hl_newVehicle" runat="server" NavigateUrl="~/newcar.aspx">New Vehicle</asp:HyperLink>
+        <asp:HyperLink ID="hl_newVehicle" runat="server" NavigateUrl="~/admin/newcar.aspx">New Vehicle</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="hl_viewAll" runat="server" NavigateUrl="~/viewallcars.aspx">View All Cars</asp:HyperLink>
         <br />

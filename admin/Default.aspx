@@ -37,9 +37,12 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="hl_newVehicle" runat="server" NavigateUrl="~/newcar.aspx">New Vehicle</asp:HyperLink>
+        <br />
+        Admin Home Page<br />
+        <br />
+        <asp:HyperLink ID="hl_newVehicle" runat="server" NavigateUrl="~/admin/newcar.aspx">New Vehicle</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="hl_viewAll" runat="server" NavigateUrl="~/viewallcars.aspx">View All Cars</asp:HyperLink>
+        <asp:HyperLink ID="hl_viewAll" runat="server" NavigateUrl="~/admin/viewallcars.aspx">View All Cars</asp:HyperLink>
         <br />
         <br />
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="VehicleID" DataSourceID="sql_cars">

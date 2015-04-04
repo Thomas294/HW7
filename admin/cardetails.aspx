@@ -44,7 +44,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+        <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/admin/Default.aspx">Home</asp:HyperLink>
         <br />
         <br />
 
