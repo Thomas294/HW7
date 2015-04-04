@@ -1,9 +1,5 @@
 ﻿
-Partial Class cardetails
+Partial Class viewallcars
     Inherits System.Web.UI.Page
-
-
-
-
 
 End Class
