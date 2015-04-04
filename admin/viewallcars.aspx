@@ -1,16 +1,13 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="viewallcars.aspx.vb" Inherits="viewallcars" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="viewallcars.aspx.vb" Inherits="admin_viewallcars" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> title
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TGLAVAN_HW7 %>" SelectCommand="SELECT * FROM [TGLAVAN_HW7]"></asp:SqlDataSource>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+           <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:TGLAVAN_HW7 %>" SelectCommand="SELECT * FROM [TGLAVAN_HW7]"></asp:SqlDataSource>
         <br />
         <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/admin/Default.aspx">Home</asp:HyperLink>
         <br />
@@ -26,8 +23,6 @@
                 <asp:BoundField DataField="Transmission" HeaderText="Transmission" SortExpression="Transmission" />
             </Columns>
         </asp:GridView>
-    
-    </div>
-    </form>
-</body>
-</html>
+
+</asp:Content>
+

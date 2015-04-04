@@ -1,14 +1,10 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="admin_Default" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> Oh look a title
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
     
         <asp:SqlDataSource ID="sql_cars" runat="server" ConnectionString="<%$ ConnectionStrings:TGLAVAN_HW7 %>" DeleteCommand="DELETE FROM [TGLAVAN_HW7] WHERE [VehicleID] = @VehicleID" InsertCommand="INSERT INTO [TGLAVAN_HW7] ([Make], [Model], [Year], [MSRP], [BHP], [Engine], [Layout], [Transmission]) VALUES (@Make, @Model, @Year, @MSRP, @BHP, @Engine, @Layout, @Transmission)" SelectCommand="SELECT * FROM [TGLAVAN_HW7]" UpdateCommand="UPDATE [TGLAVAN_HW7] SET [Make] = @Make, [Model] = @Model, [Year] = @Year, [MSRP] = @MSRP, [BHP] = @BHP, [Engine] = @Engine, [Layout] = @Layout, [Transmission] = @Transmission WHERE [VehicleID] = @VehicleID">
             <DeleteParameters>
@@ -38,13 +34,6 @@
         </asp:SqlDataSource>
         <br />
         <br />
-        Admin Home Page<br />
-        <br />
-        <asp:HyperLink ID="hl_newVehicle" runat="server" NavigateUrl="~/admin/newcar.aspx">New Vehicle</asp:HyperLink>
-        &nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="hl_viewAll" runat="server" NavigateUrl="~/admin/viewallcars.aspx">View All Cars</asp:HyperLink>
-        <br />
-        <br />
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="VehicleID" DataSourceID="sql_cars">
             <Columns>
                 <asp:BoundField DataField="Make" HeaderText="Make" SortExpression="Make" />
@@ -54,7 +43,5 @@
             </Columns>
         </asp:GridView>
     
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

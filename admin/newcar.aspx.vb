@@ -1,7 +1,6 @@
 ﻿
-Partial Class newcar
+Partial Class admin_newcar
     Inherits System.Web.UI.Page
-
 
 
 
@@ -14,7 +13,7 @@ Partial Class newcar
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
         DetailsView1.Focus()
-
-
     End Sub
+
+
 End Class
