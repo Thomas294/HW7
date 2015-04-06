@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="admin_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> Oh look a title
-</asp:Content>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> Admin Default </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -32,6 +31,13 @@
                 <asp:Parameter Name="VehicleID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        Welcome to the Admin home page!
+        <br />
+        <br />
+        <asp:HyperLink ID="hl_addNewCar" runat="server" NavigateUrl="~/admin/newcar.aspx">Add New Car</asp:HyperLink>
+&nbsp;&nbsp;
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/siteManger/default.aspx">Edit Users</asp:HyperLink>
         <br />
         <br />
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="VehicleID" DataSourceID="sql_cars">

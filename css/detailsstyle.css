@@ -20,11 +20,11 @@ width:900px;
 }
 
 #header {
-background-color:blue;
-color:white;
+background-color:red;
+color:black;
 padding:10px;
 margin:0 auto;
-width:642px;
+width:707px;
 height:150px;
 float:left;
 border-top:1px solid black;
@@ -34,7 +34,7 @@ text-align:center;
 }
 
 #right_header {
-background-color:blue;
+background-color:red;
 padding:10px;
 margin:0 auto;
 float:left; 
@@ -55,7 +55,7 @@ border-left:1px solid black;
 }
 
 #footer {
-background-color:green;
+background-color:orange;
 color:white;
 padding:10px;
 margin:0 auto;
@@ -85,12 +85,12 @@ display:block;
 padding: 8px 15px;
 text-decoration:none;
 font-weight:bold;
-color:#069;
+color:black;
 border-right: 1px solid #ccc;
 }
 
 #nav li a:hover {
-color: #c00;
+color: black;
 background-color:#fff;
 }
 
@@ -100,7 +100,9 @@ background-color:#fff;
 .center_img {
 display:block;
 margin-left:auto;
-margin-right:auto;   
+margin-right:auto;
+    height: 479px;
+    width: 824px;
 }
 
 

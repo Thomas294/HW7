@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="cardetails.aspx.vb" Inherits="admin_cardetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> a title 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> Admin Car Details 
 </asp:Content>
 
 
@@ -42,7 +42,7 @@
         <span class="deletedCar"> <asp:Label ID="lbl_deletedcar" runat="server"></asp:Label></span>
         <br />
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_cardetails" Height="50px" Width="125px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_cardetails" Height="50px" Width="333px">
             <Fields>
                 <asp:BoundField DataField="VehicleID" HeaderText="VehicleID" InsertVisible="False" ReadOnly="True" SortExpression="VehicleID" />
                 <asp:BoundField DataField="Make" HeaderText="Make" SortExpression="Make" />

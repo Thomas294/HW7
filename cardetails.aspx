@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="cardetails.aspx.vb" Inherits="cardetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> a title for car details
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> car details
 </asp:Content>
 
 
@@ -21,7 +21,7 @@
 
         <br />
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_cardetails" Height="50px" Width="125px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_cardetails" Height="50px" Width="391px">
             <Fields>
                 <asp:BoundField DataField="VehicleID" HeaderText="VehicleID" InsertVisible="False" ReadOnly="True" SortExpression="VehicleID" />
                 <asp:BoundField DataField="Make" HeaderText="Make" SortExpression="Make" />

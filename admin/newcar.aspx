@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="newcar.aspx.vb" Inherits="admin_newcar" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    title for new car
-</asp:Content>
+    new car</asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
       <asp:SqlDataSource ID="sql_carsnew" runat="server" ConnectionString="<%$ ConnectionStrings:TGLAVAN_HW7 %>" DeleteCommand="DELETE FROM [TGLAVAN_HW7] WHERE [VehicleID] = @VehicleID" InsertCommand="INSERT INTO [TGLAVAN_HW7] ([Make], [Model], [Year], [MSRP], [BHP], [Engine], [Layout], [Transmission]) VALUES (@Make, @Model, @Year, @MSRP, @BHP, @Engine, @Layout, @Transmission)" SelectCommand="SELECT * FROM [TGLAVAN_HW7]" UpdateCommand="UPDATE [TGLAVAN_HW7] SET [Make] = @Make, [Model] = @Model, [Year] = @Year, [MSRP] = @MSRP, [BHP] = @BHP, [Engine] = @Engine, [Layout] = @Layout, [Transmission] = @Transmission WHERE [VehicleID] = @VehicleID">
@@ -32,9 +31,9 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/admin/Default.aspx">Home</asp:HyperLink>
+        <asp:HyperLink ID="hl_home" runat="server" NavigateUrl="~/admin/Default.aspx">Admin Home</asp:HyperLink>
         <br />
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_carsnew" DefaultMode="Insert" Height="50px" Width="125px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="VehicleID" DataSourceID="sql_carsnew" DefaultMode="Insert" Height="50px" Width="206px">
             <Fields>
                 <asp:BoundField DataField="VehicleID" HeaderText="VehicleID" InsertVisible="False" ReadOnly="True" SortExpression="VehicleID" />
                 <asp:BoundField DataField="Make" HeaderText="Make" SortExpression="Make" />

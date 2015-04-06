@@ -11,26 +11,42 @@
     <link rel="stylesheet" type="text/css" href="./css/detailsstyle.css" />
 </head>
 <body>
-    <form id="form1" runat="server">
+
+      <form id="form1" runat="server">
+
+        
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+       
+ 
 
     <div id="container">
 
         <div id="header">
-            <h1> Car H1 </h1>
-            <h3> awesome cars database h3 </h3>
+            <h1> Cars database </h1>
+            <h3> A way to keep track of all the awesome cars </h3>
         </div> <!-- close header -->
 
 
         <div id="right_header">
-           <img src="./css/porsche.png" height="150px" />
+           
+
+
+            <asp:Image ID="porscheLogo" runat="server" Height="150px" ImageUrl="~/css/porsche.png" />
+           
+
+
         </div> <!-- close right header -->
 
 
             <div id="menu">
                 <ul id="nav">
-                    <li><a href="./Default.aspx">Home</a></li>
-                    <li><a href="./viewallcars.aspx">View All Cars</a></li>
-                    <li><a href="./admin/Default.aspx">Admin</a></li>
+                    
+                    <li><asp:HyperLink ID="linkhome" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkcarlist" runat="server" NavigateUrl="~/carlist.aspx">Car List</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkviewallcars" runat="server" NavigateUrl="~/viewallcars.aspx">View All Cars</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="linkadmin" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
+                    
+                    
                 </ul>
            </div> <!-- close menu div -->
 

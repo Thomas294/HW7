@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cars.master" AutoEventWireup="false" CodeFile="viewallcars.aspx.vb" Inherits="admin_viewallcars" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> title
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server"> View All Cars
 </asp:Content>
 
 
